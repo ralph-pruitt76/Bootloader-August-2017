@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<style>
+<!--
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin-top:0cm;margin-right:0cm;margin-bottom:8pt;margin-left:0cm;line-height:normal;font-size:10.0pt;font-family:Verdana,sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+{margin-top:0cm;margin-right:0cm;margin-bottom:2pt;margin-left:0cm;line-height:normal;font-size:10.0pt;font-family:Verdana,sans-serif;}
+-->
+</style>
+<title>Release Notes for AN4852 Programming an external flash memory using the UART bootloader built-in STM32 microcontrollers</title></head>
+<body lang="EN-US">
+<p class="MsoNormal" style="text-align: center; line-height: normal;" align="center"><b><span style="font-size: 18pt; color: rgb(51, 102, 255);">
+Release Notes for
+</span></b></p>
+<p class="MsoNormal" style="text-align: center; line-height: normal;" align="center"><b><span style="font-size: 18pt; color: rgb(51, 102, 255);">
+AN4852 Programming an external flash memory using the UART bootloader&nbsp;</span></b><b><span style="font-size: 18pt; color: rgb(51, 102, 255);"></span></b></p><p class="MsoNormal" style="text-align: center; line-height: normal;" align="center"><b><span style="font-size: 18pt; color: rgb(51, 102, 255);">built-in STM32 microcontrollers</span></b></p><b><span style="font-size: 18pt; color: rgb(51, 102, 255);"></span></b><p class="MsoNormal" style="text-align: center; line-height: normal;" align="center"></p>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<p class="MsoNormal" style="line-height: normal;" align="center"><span style="font-size: 10pt;">
+Copyright © 2016 STMicroelectronics
+</span></p>
+<p class="MsoNormal" style="line-height: normal;" align="center"><span style="font-size: 10pt;">
+Microcontrollers Division - Application Team
+</span></p>
+<p class="MsoNormal" align="center"> <img style="border: 0px solid ; width: 104px; height: 77px;" alt="" id="_rnc_img0" src="./_htmresc/st_logo.png" border="0"> </p>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<table class="MsoNormal" style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-left: 4cm; margin-right: 4cm; width: 80%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="padding: 0cm 5.4pt;">
+<p class="MsoNormal" style="margin-left: 0cm; margin-bottom: 0cm; line-height: normal;"><b><span style="font-size: 12pt; color: white;">
+Update History</span></b></p></td></tr></tbody></table>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;&nbsp;</span></p>
+<table class="MsoNormal" style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-left: 4cm; width: 23%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="padding: 0cm 5.4pt;" align="left">
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal;"><b><span style="font-size: 10pt; color: white;">
+V1.0.0  / 30-May-2016</span></b></p></td></tr></tbody></table>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-left: 4cm; line-height: normal;"><b><u><span style="font-size: 10pt;">
+Main Changes
+</span></u></b></p>
+<p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">
+First release. 
+</span></spanstyle></p>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-left: 4cm; line-height: normal;"><b><u><span style="font-size: 10pt;">
+Content
+</span></u></b></p>
+<p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">&nbsp;STM32F4 HAL Driver 1.5.0.&nbsp;<span style="text-decoration: underline;"><a href="Drivers/STM32F4xx_HAL_Driver/Release_Notes.html">(Release Notes)</a></span></span></spanstyle></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">
+STM32F446E-EVAL BSP Driver 1.1.2.&nbsp;<a href="Drivers/BSP/STM32446E_EVAL/Release_Notes.html">(Release Notes)</a></span></p><span style="font-size: 10pt;"><span class="MsoListParagraph"></span></span><span class="MsoListParagraph" style="font-size: 10pt;"></span><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">
+STM32F4xx CMSIS 2.5.0.&nbsp;<a href="Drivers/CMSIS/Device/ST/STM32F4xx/Release_Notes.html">(Release Notes)</a></span>
+
+</spanstyle></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;"> Cortex-M CMSIS V4.</span></spanstyle><span style="font-size: 10pt;">5</span><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;">.0.<span style="font-weight: bold;"> </span></span></spanstyle><span style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; font-family: Verdana; font-size: 10pt; font-weight: bold;"><span class="Apple-converted-space"></span></span><span style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; font-family: Verdana; font-size: 10pt;"><span style="font-weight: bold;"></span></span><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;"><a href="Drivers/CMSIS/index.html">(Release Notes)</a> &nbsp; &nbsp;</span></spanstyle><span style="font-family: 'Segoe UI'; color: rgb(0, 0, 0); font-size: 10pt; direction: ltr;" dir="ltr"></span></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><a href="Drivers/STM32F4xx_HAL_Driver/Release_Notes.html"><span style="font-size: 10pt;"></span><span style="font-size: 10pt;"></span><span style="font-size: 10pt;"><span style="color: black;"></span></span></a><a href="../../first%20AN/before%20publication/Drivers/BSP/STM32L476G_EVAL%5CRelease_Notes.html"></a><span style="font-size: 10pt;"><a href="Drivers/STM32F4xx_HAL_Driver/Release_Notes.html"></a></span></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;"><a href="Libraries%5CSTMxx_StdPeriph_Driver%5CRelease_Notes.html"></a></span>
+</spanstyle></p>
+<span style="font-family: Verdana,sans-serif;"><br></span>
+<p class="MsoNormal" style="margin-left: 4cm; line-height: normal;"><b><u><span style="font-size: 10pt;">
+Development Toolchains and Compilers
+</span></u></b></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">&nbsp;</span></spanstyle><span style="font-size: 10pt;">IAR Embedded workbench FOR arm (EWARM) toolchain V7.60.1.</span></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">&nbsp;</span></spanstyle><span style="font-size: 10pt; font-family: Verdana;">RealView Microcontroller Development Kit (</span><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;">MDK-ARM)&nbsp;</span></spanstyle><span style="font-size: 10pt;">toolchain</span><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;"> V5.20.</span></spanstyle></p>
+<p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;"></span></spanstyle><span style="color: rgb(0, 0, 0); font-family: Verdana; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; float: none; display: inline ! important;"> System Workbench for STM32 (SW4STM32) toolchain V1.9.</span></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol"><br><span style="font-size: 10pt;"> 
+</span></spanstyle></p><p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"></p><p class="MsoNormal" style="margin-left: 4cm; line-height: normal;"><b><u><span style="font-size: 10pt;">
+Supported Devices and EVAL boards
+</span></u></b></p>
+<p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol">&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">&nbsp;</span></spanstyle><span style="font-size: 10pt;">STM32F446E-EVAL</span><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style="font-size: 10pt;">. 
+</span></spanstyle></p>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-left: 4cm; line-height: normal;"><b><u><span style="font-size: 10pt;">
+Known Limitations
+</span></u></b></p>
+<p class="MsoListParagraph" style="margin-left: 4cm; margin-right: 4cm; text-indent: 10pt; line-height: normal;"><spanstyle ="font-size:10.0pt;font-family:Symbol"><span style=""></span><span style="font-size: 10pt;"></span></spanstyle>&#8226;<span style="">&nbsp;</span><span style="font-size: 10pt;">
+No known limitations.</span></p>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<table class="MsoNormal" style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-left: 4cm; margin-right: 4cm; width: 80%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="padding: 0cm 5.4pt;">
+<p class="MsoNormal" style="margin-left: 0cm; margin-bottom: 0cm; line-height: normal;"><b><span style="font-size: 12pt; color: white;">
+License</span></b></p></td></tr></tbody></table>
+<p class="MsoNormal" style="line-height: normal;"><span style="font-size: 10pt;">&nbsp;</span></p>
+<p class="MsoNormal" style="margin-left: 4cm; margin-right: 4cm; line-height: normal;"><span style="font-size: 10pt; color: black;">Licensed under MCD-ST Liberty SW License Agreement V2, (the "License").
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+</span></p>
+<p class="MsoNormal" style="text-align: center; line-height: normal;"><span style="font-size: 10pt;">
+<a href="http://www.st.com/software_license_agreement_liberty_v2"> http://www.st.com/software_license_agreement_liberty_v2</a></span></p>
+<p class="MsoNormal" style="margin-left: 4cm; margin-right: 4cm; line-height: normal;"><span style="font-size: 10pt; color: black;">Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</span></p>
+<p class="MsoNormal" style="line-height: normal;"><b><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></b></p>
+<table class="MsoNormal" style="background: rgb(51, 102, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; margin-left: 4cm; margin-right: 4cm; width: 80%;" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr><td style="padding: 0cm 5.4pt;">
+<p class="MsoNormal" style="margin-left: 0cm; margin-bottom: 0cm; line-height: 4pt;"><b><span style="font-size: 10pt; color: rgb(51, 102, 255);">
+---</span></b></p></td></tr></tbody></table>
+<p class="MsoNormal" style="line-height: normal;"><b><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></b></p>
+<p class="MsoNormal" style="text-align: center; line-height: normal;"><span style="font-size: 10pt;">
+For complete documentation on <b>STMTxx</b> microcontrollers please visit <a href="http://www.st.com/"> http://www.st.com/</a></span></p>
+<p class="MsoNormal" style="line-height: normal;"><b><span style="font-size: 10pt;">&nbsp;&nbsp;&nbsp;</span></b></p>
+
+</body></html>
